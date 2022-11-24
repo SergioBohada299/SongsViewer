@@ -1,0 +1,96 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background-color: black;
+  }
+}
+
+.songs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  background-color: black;
+}
+
+.song-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  width: 300px;
+  height: max-content;
+  box-shadow: 0 24px 28px 0 rgba(115, 0, 113, 0.5);
+  border-radius: 10%;
+  align-items: center;
+  background-color: white;
+  color: #390040;
+  margin-top: 15px;
+}
+
+.song-card:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 10ms;
+}
+
+.song-card span {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.song-card img {
+  width: 200px;
+  border-radius: 10%;
+}
+
+.song-card p {
+  font-size: 1rem;
+}
+
+
+.song-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  color: black;
+}
+
+.song-container span {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.song-container p {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.song-container img {
+  width: 400px;
+}
