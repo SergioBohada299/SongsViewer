@@ -20,7 +20,7 @@ const SongDetail = () => {
         <br />
         <b>Año de lanzamiento: </b> {año}
       </p>
-      <Link href={link} target="_blank">
+      <Link href={link ?? ""} target="_blank">
         Ver en spotify
       </Link>
     </div>
