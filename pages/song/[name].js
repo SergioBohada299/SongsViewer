@@ -3,7 +3,12 @@ import Link from "next/link";
 const SongDetail = () => {
   const router = useRouter();
   const data = router.query;
-  const { name, image, año, artista, link } = data;
+  const name = data?.name
+  const image = data?.image
+  const año = data?.año
+  const artista = data?.artista
+  const link = data?.link
+ //const { name, image, año, artista, link } = data;
   console.log(data);
   return (
     <div className="song-container">
