@@ -1,4 +1,4 @@
-import SongsList from "./songsList";
+import SongsList from "./SongsList";
 
 export default function Home() {
   return (
